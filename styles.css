@@ -1,0 +1,111 @@
+
+.banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 5px auto 5px auto;
+  grid-template-columns: 300px auto auto;
+  -ms-grid-rows: auto 5px 200px;
+  grid-template-rows: auto 200px;
+  gap: 5px 5px;
+  background-color: #EEEEEE;
+  width: 470px;
+  height: 290px
+}.banner > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1
+}.banner > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3
+}.banner > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5
+}.banner > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1
+}.banner > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3
+}.banner > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5
+}
+
+.heading-div {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+.heading {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 23px;
+  margin: 0;
+}
+
+.img-div {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-div {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 2;
+  grid-column-end: 4;
+  padding-right: 5px;
+}
+
+.text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.myButton {
+  -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
+          box-shadow: inset 0px 1px 0px 0px #cf866c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d0451b), to(#bc3315));
+  background: -o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+  background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color: #d0451b;
+  border-radius: 3px;
+  border: 1px solid #942911;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  margin: auto auto;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #854629;
+}
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #bc3315), to(#d0451b));
+  background: -o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+  background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color: #bc3315;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
